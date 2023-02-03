@@ -1,0 +1,427 @@
+/* Begining of CSS Styles Sheet - TUBYmoto*/
+
+:root {
+    --tan: rgb(189, 144, 106);
+    --grey: #f2f2f2;
+    --darkGrey: #33393f;
+    --teal: #99CCCC;
+    --darkTeal: #cce6e6;
+    --white: white;
+}
+
+
+html {
+    /* font-size: 62%;   commented out, it makes the navbar malfunction with TailwindCSS*/
+    scroll-behavior: smooth;
+}
+
+/* Navigation Menu: optional layout for (3) given titles e.g: About, Events, and Contact*/
+.menu {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Avatar: or Image for Central Head of CSS style sheet if necessary */
+.container-avatar {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, rgba(227, 194, 5, 0.36),rgba(241, 175, 32, 0.394), rgba(199, 113, 33, 0.453), rgba(201, 17, 115, 0.464), rgba(34, 107, 210, 0.369)); /* Standard syntax */
+}
+
+.avatar {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(tan,red, rgb(7, 7, 165) );
+    border-radius: 16rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200px;
+    font-weight: 900;
+    text-shadow: 10px -8px 14px rgb(255, 0, 0) ;
+    box-shadow: rgba(169, 17, 17, 0.78) 0px 10px 14px 1px;
+
+}
+/* NOTE: Might not need AVATAR-INNER */
+.avatar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Body: Structure style */
+Body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    /* background: linear-gradient(180deg, rgb(237, 171, 27, .400),rgb(222, 149, 24, .400), rgb(184, 101, 12, .400), rgb(140, 67, 7, .400)); */
+    /* background: linear-gradient(180deg, rgb(1, 8, 30, 0.900),rgba(7, 13, 49, 0.900), rgba(13, 19, 68, 0.800), rgb(19, 24, 86, 0.700), rgb(24, 29, 105, 0.600));  */
+}
+
+.light {
+    background: linear-gradient(180deg, rgb(237, 171, 27, .400),rgb(222, 149, 24, .400), rgb(184, 101, 12, .400), rgb(140, 67, 7, .400));
+}
+
+.dark {
+    background: linear-gradient(180deg, rgb(1, 8, 30, 0.900),rgba(7, 13, 49, 0.900), rgba(13, 19, 68, 0.800), rgb(19, 24, 86, 0.700), rgb(24, 29, 105, 0.600)); 
+}
+
+/* Title "10 Things To DO in Toronto*/ */
+.hero {
+    height: 100px;
+    width: 100%;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    /* background-image: url(); */
+    background-size: cover;
+    background-position: center;
+}
+/* Card body's will contain organized  */
+
+.card-body {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Body: font size family used throughout the CSS*/
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    /* color: black;
+    background-color: white; */
+}
+
+#headerTO {
+    background-color: var(--grey);
+    color: var(--tan);
+}
+
+/* H1 to H6 header design and frame perfect for mobile format*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.625rem;
+    color: var(--white);
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+}
+h1 {
+    font-size: 80px;
+    color: white;
+    font-weight: 380;
+}
+h2 {
+    font-size: 38px;
+    color: white;
+    font-weight: 280;
+}
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 15px;
+    color: rgb(189, 144, 106);
+}
+
+h6 {
+    font-size: 10px;
+    color: rgb(189, 144, 106);
+}
+/* Container blocks - this is holding the blocks into the center of the page - otherwise the containers would be pushed out to the edge of the page */
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 2.5rem;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Flexbox: Row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+
+/* Container Section */
+.textbox-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 3rem;
+}
+
+/*.textbox: currently where the photo iamges have been added */
+.textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+    color: var(--tan);
+    outline: 2px double #dbd4cb;
+    outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Code card header */
+.textbox .textbox-header {
+    border: 2px solid #eae6e0;
+    border-radius: 8px;
+    background-color: var(--darkGrey);
+    color: var(--tan);
+    transition: all 0.5s ease-in-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin: -4rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+}
+
+/* Resume: card hover/glow effect turns on when mouse gloats */
+.textbox:hover,
+.textbox:hover .textbox-header {
+    box-shadow: inset
+}
+
+
+/*.textbox */
+.textbox .text-block {
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Code card pr structure */
+.textbox pre {
+    overflow: auto;
+    white-space: pre-wrap;
+    border-radius: 60px;
+    tab-size: 4;
+    padding: 1.2rem 1rem;
+    background-image: linear-gradient(rgba(205, 205, 205, 0.725) 0%, rgb(255, 255, 255) 100%);
+    display: flex;
+    align-items: center;
+}
+
+.textbox pre:active {
+    user-select: all;
+}
+
+.event-btn {
+    color: var(--darkGrey);
+    margin: .5rem;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 45px;
+    border: 2px solid var(--tan);
+    background-color: var(--grey);
+}
+
+.event-btn:hover {
+    background-color: var(--teal);
+    box-shadow: 0px 15px 20px var(--darkTeal);
+    color: var(--darkGrey);
+    transform: translateY(-7px);
+
+}
+
+
+.footer {
+    background-color: var(--grey);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 4.5rem;
+}
+
+/* COLOR MODE */
+
+:root {
+    --clr-body-bg: hsl(0 0% 90%);
+    --clr-card-bg: hsl(0 0% 100%);
+    --clr-text: hsl(0 0% 15%);
+    --clr-heading: hsl(0 0% 25%);
+  }
+  
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    background: var(--clr-body-bg);
+    color: var(--clr-text);
+  }
+  
+  h1,
+  h2,
+  h3 {
+    color: var(--clr-heading);
+    line-height: 1.1;
+  }
+  
+  .auto-grid {
+    --min-column-size: 225px;
+  
+    display: grid;
+    gap: clamp(1rem, 5vmax, 1.625rem);
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(100%, var(--min-column-size)), 1fr)
+    );
+  }
+  
+  .wrapper {
+    --max-width: 55rem;
+    width: min(100% - 2rem, var(--max-width));
+    margin-inline: auto;
+  }
+  
+  .card {
+    padding: 1rem;
+    background-color: var(--clr-card-bg);
+    border-block-start: 0.5rem solid;
+    border-radius: 0.5rem;
+  }
+  
+  .card > * {
+    margin: 0;
+  }
+  
+  .card > *:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+  
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  .color-picker > fieldset {
+    border: 0;
+    display: flex;
+    gap: 2rem;
+    width: fit-content;
+    background: #fff;
+    padding: 1rem 3rem;
+    margin-inline: auto;
+    border-radius: 0 0 1rem 1rem;
+  }
+  
+  .color-picker input[type="radio"] {
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    outline: 3px solid var(--radio-color, currentColor);
+    outline-offset: 3px;
+    border-radius: 50%;
+  }
+  
+  .color-picker input[type="radio"]:checked {
+    background-color: var(--radio-color);
+  }
+  
+  .color-picker input[type="radio"]#light {
+    --radio-color: gray;
+  }
+  .color-picker input[type="radio"]#pink {
+    --radio-color: pink;
+  }
+  .color-picker input[type="radio"]#dark {
+    --radio-color: #232323;
+  }
+  
+  .pink {
+    --clr-body-bg: hsl(310 50% 90%);
+    --clr-card-bg: hsl(310 50% 100%);
+    --clr-text: hsl(310 50% 15%);
+    --clr-heading: hsl(310 50% 25%);
+  }
+  
+  .dark {
+    --clr-body-bg: hsl(209 50% 10%);
+    --clr-card-bg: hsl(209 50% 5%);
+    --clr-text: hsl(209 50% 90%);
+    --clr-heading: hsl(209 50% 80%);
+  }
+  
+  :root:has(#pink:checked) {
+    --clr-body-bg: hsl(310 50% 90%);
+    --clr-card-bg: hsl(310 50% 100%);
+    --clr-text: hsl(310 50% 15%);
+    --clr-heading: hsl(310 50% 25%);
+  }
+  
+  :root:has(#dark:checked) {
+    --clr-body-bg: hsl(209 50% 10%);
+    --clr-card-bg: hsl(209 50% 5%);
+    --clr-text: hsl(209 50% 90%);
+    --clr-heading: hsl(209 50% 80%);
+  }
+  
+  /* Responsive Design */
+@media screen and (min-width: 768px) {
+
+    .textbox-column {
+        flex: 0 0 50%;
+    }
+}
+/* Responsive Design */
+@media screen and (min-width: 1000px) {
+    .textbox-column {
+        flex: 0 0 33%;
+    }
+}
+
